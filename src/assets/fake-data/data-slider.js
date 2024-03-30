@@ -6,8 +6,8 @@ import img1 from '../images/common/itemslider.png';
 const dataSlider = [
     {
         id: 1,
-        title: 'CYbox nft collectionS for everyone',
-        desc : 'Nulla ornare sagittis placerat nunc sit tempus enim. Accumsan pellentesque ipsum felis tristique at proin vel turpis.',
+        title: 'PURE LIGHT',
+        desc : 'SEASON 0.1',
         bgImg: bgImg1,
         img : img1
     },

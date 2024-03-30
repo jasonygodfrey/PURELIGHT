@@ -30,7 +30,7 @@ function Slider(props) {
                         
                     ))
                 }
-            </Swiper>
+            </Swiper> 
 
         </section>
     );

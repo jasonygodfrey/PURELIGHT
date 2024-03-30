@@ -21,29 +21,40 @@ import dataPartner from '../assets/fake-data/data-partner';
 import FAQ from '../features/faq';
 import dataFaq from '../assets/fake-data/data-faq';
 
-
 function HomeOne(props) {
+    // Inline styles for the video background
+    const videoBackgroundStyle = {
+        position: 'fixed',
+        right: 0,
+        bottom: 0,
+        minWidth: '100%',
+        minHeight: '100%',
+        zIndex: -1, // Ensures the video stays in the background
+    };
+
+    // Inline styles for the home-1 container
+    const homeStyle = {
+        position: 'relative',
+        zIndex: 1,
+        // Add any other styles you need for home-1 here
+    };
 
     return (
-        <div className='home-1'>
-        <Slider data={dataSlider} />
+        <div className='home-1' style={homeStyle}>
+            <video autoPlay muted loop style={videoBackgroundStyle}>
+                <source src="/background.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+            </video>
 
-        <About data={dataAbout} />
-
-        <Project data={dataProject} />
-
-        <RoadMap data={dataRoadmap} />
-
-        <Work data={dataWork} />
-
-        <Team data={dataTeam} />
-
-        <Blog data={dataBlog} />
-
-        <Partner data={dataPartner} />
-
-        <FAQ data={dataFaq} />
-        
+            <Slider data={dataSlider} />  
+            <About data={dataAbout} />
+            <Project data={dataProject} />
+            <RoadMap data={dataRoadmap} />
+            <Work data={dataWork} />
+            <Team data={dataTeam} />
+            <Blog data={dataBlog} />
+            <Partner data={dataPartner} />
+            <FAQ data={dataFaq} />
         </div>
     );
 }

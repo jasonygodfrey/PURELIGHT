@@ -27,7 +27,7 @@
             top: 0;
             left: 0;
             z-index: -1;
-            width: 100%;
+            width: 00%;
             height: 944px;
         }
         .box-slider__main {
@@ -135,7 +135,7 @@
         padding: 0;
         line-height: 20px;
         border: 2px solid $color-hover;
-        z-index: 9;
+        z-index: -9;
         border-radius: 50%;
 
         &::before , &::after {
