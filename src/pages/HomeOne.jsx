@@ -41,20 +41,37 @@ function HomeOne(props) {
 
     return (
         <div className='home-1' style={homeStyle}>
-            <video autoPlay muted loop style={videoBackgroundStyle}>
-                <source src="/background.mp4" type="video/mp4" />
-                Your browser does not support HTML5 video.
-            </video>
+       <video
+    autoPlay
+    muted
+    loop
+    style={{
+        position: 'fixed',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        minWidth: '100%',
+        minHeight: '100%',
+        width: 'auto',
+        height: 'auto',
+        zIndex: -1, // Ensures the video stays in the background
+        objectFit: 'cover', // Cover the screen without losing aspect ratio
+    }}>
+    <source src="/background.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+</video>
+
 
             <Slider data={dataSlider} />  
-            <About data={dataAbout} />
-            <Project data={dataProject} />
+{/* <About data={dataAbout} /> */}
+<Blog data={dataBlog} />
+<Project data={dataProject} />
             <RoadMap data={dataRoadmap} />
-            <Work data={dataWork} />
-            <Team data={dataTeam} />
-            <Blog data={dataBlog} />
-            <Partner data={dataPartner} />
-            <FAQ data={dataFaq} />
+          {/*   <Work data={dataWork} /> */}
+          {/*   <Team data={dataTeam} /> */}
+            
+          {/*  <Partner data={dataPartner} /> */}
+          {/*   <FAQ data={dataFaq} /> */}
         </div>
     );
 }

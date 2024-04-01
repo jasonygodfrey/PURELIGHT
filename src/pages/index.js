@@ -34,7 +34,7 @@ const routes = [
   { path: '/blog', component: <Blog />},
   { path: '/blog-details', component: <BlogDetails />},
   { path: '/contact', component: <Contact />},
-  { path: '/team-details', component: <TeamDetail />},
+   { path: '/team-details', component: <TeamDetail />},
 
 ]
 
